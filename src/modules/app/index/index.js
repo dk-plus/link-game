@@ -1,6 +1,7 @@
 const $ = require('jquery');
 const artT = require('art-template');
 
+const Game = require('../../components/game/game.js');
 const Utils = require('../../lib/utils.js');
 
 require('./index.less');
@@ -29,4 +30,5 @@ require('./index.less');
   }
 
   render();
+  Game.init();
 })();
